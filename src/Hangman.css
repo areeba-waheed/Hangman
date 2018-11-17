@@ -1,0 +1,49 @@
+.root {
+	-fx-font-family: "Arial" ;
+	-fx-background-color: orange ;
+}
+.hangman-title{
+	-fx-font-size: 48pt ;
+	-fx-text-fill: darkred ;
+	-fx-font-family: "Stencil";
+	-fx-alignment: center;
+	-fx-padding: 15px;
+}
+.hangman-board {
+	-fx-background-color: orange ;
+	-fx-padding: 15px ;
+	-fx-alignment: center ;
+}
+
+/*.hangman-board > .board-grid {
+	 -fx-background-color: white;
+	 -fx-border-color: transparent ;
+ }
+
+.hangman-board .label:disabled {
+	-fx-opacity: 1.0 ;
+}
+
+.hangman-board > .board-grid > .label {
+	-fx-font-size: 12pt ;
+}*/
+
+.status {
+	-fx-font-size: 20pt ;
+	-fx-text-fill: white ;
+	-fx-font-style: italic;
+	-fx-font-family: "Arial";
+}
+
+.custom {
+  -fx-background-color: saddlebrown ;
+  -fx-border-color: saddlebrown;
+  -fx-text-fill: white ;
+  -fx-font-size: 16pt;
+  -fx-opacity: 1.0 ;
+}
+
+.bottom-box
+{
+	-fx-background-color: saddlebrown;
+}

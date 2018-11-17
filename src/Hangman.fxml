@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+
+	<top>
+		<VBox alignment="TOP_CENTER">
+			<MenuBar>
+				<Menu fx:id = "menu" text="Game">
+					<MenuItem text="Hangman" onAction="#newHangman"/>
+					<MenuItem text="Quit" onAction="#quit"/>
+				</Menu>
+			</MenuBar>
+			<Label text="HANGMAN">
+				<styleClass>
+					<String fx:value="hangman-title"/>
+				</styleClass>
+			</Label>
+		</VBox>
+	</top>
+
+	<center>
+		<VBox fx:id="board">
+			<styleClass>
+				<String fx:value="hangman-board"/>
+			</styleClass>
+		</VBox>
+	</center>
+
+	<bottom>
+		<VBox>
+			<styleClass>
+				<String fx:value="bottom-box"/>
+			</styleClass>
+			<Label fx:id="statusLabel">
+				<styleClass>
+					<String fx:value="status"/>
+				</styleClass>
+			</Label>
+			<GridPane>
+				<Label fx:id="correctGuessLabel" GridPane.columnIndex="0">
+					<styleClass>
+						<String fx:value="status"/>
+					</styleClass>
+				</Label>
+				<TextField fx:id="correctGuessField" GridPane.columnIndex="1">
+				</TextField>
+			</GridPane>
+			<GridPane>
+				<Label fx:id="incorrectGuessLabel" GridPane.columnIndex="0">
+					<styleClass>
+						<String fx:value="status"/>
+					</styleClass>
+				</Label>
+				<TextField fx:id="incorrectGuessField" GridPane.columnIndex="1">
+				</TextField>
+			</GridPane>
+			<GridPane>
+				<Label fx:id="enterALetterLabel" GridPane.columnIndex="0">
+					<styleClass>
+						<String fx:value="status"/>
+					</styleClass>
+				</Label>
+				<TextField fx:id="textField" GridPane.columnIndex="1">
+				</TextField>
+			</GridPane>
+		</VBox>
+	</bottom>
+
+</BorderPane>
